@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Zabble</title>
+        <link rel="shortcut icon" href="/assets/images/logo-mini.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zabble" />
+        <meta name="keywords" content="virtual, productivity, social" />
+     
+      
+        <!-- Bootstrap -->
+        <link href="landingpage/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="landingpage/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Main Css -->
+        <link href="landingpage/css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="landingpage/css/colors/default.css" rel="stylesheet" id="color-opt">
+        <style>
+            @media screen and (max-width: 480px) {
+                 #logo {height:50px}
+
+             }         
+     </style>
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+        
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="/">
+                    <img src="images/logo-zabble-dark.png" height="70" class="logo-light-mode" alt="">
+                    <img src="images/logo-zabble-light.png" height="70" class="logo-dark-mode" alt="">
+                </a>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <%- include('header.ejs') %>
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h4 class="title"> Frequently Asked Questions </h4>
+
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                        <li class="breadcrumb-item"><a href="/">CodePartner</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">FAQs</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Start Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-5 col-12 d-none d-md-block">
+                        <div class="rounded shadow p-4 sticky-bar">
+                            <ul class="list-unstyled sidebar-nav mb-0 py-0" id="navmenu-nav">
+                                <li class="navbar-item my-2 px-0"><a href="#tech" class="h6 text-dark navbar-link">Feature Questions</a></li>
+                                <li class="navbar-item my-2 px-0"><a href="#general" class="h6 text-dark navbar-link">General Questions</a></li>
+                                <li class="navbar-item my-2 px-0"><a href="#payment" class="h6 text-dark navbar-link">Support Questions</a></li>
+                                <li class="navbar-item my-2 px-0"><a href="#support" class="h6 text-dark navbar-link">Other Questions</a></li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-8 col-md-7 col-12">
+                        <div class="section-title" id="tech">
+                            <h4>Feature Questions</h4>
+                        </div>
+
+                        <div class="accordion mt-4 pt-2" id="buyingquestion">
+                            <div class="accordion-item rounded">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        How does it work ?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse border-0 collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#buyingquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        CodePartner is a platform for creating or booking sessions with other people in our community. You can also ask questions, have discussions and talk about all things tech in our forum.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        How can I find a CodePartner?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#buyingquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        Finding a CodePartner for a session is super easy. You just need to either book a session or create a new session and wait for someone to book. Once your booking is accepted or you accept someone’s booking, all you need to do is to show up at the session.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What if my partner doesn’t join the session?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#buyingquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        We want everyone to join the session on time. We send a reminder email 15 minutes prior to the session. We even give user ratings based on their likelihood of joining the session. However, if still your partner doesn’t join, then please send us an email at <b>hello@codepartner.me</b> and someone from our team will have a session with you. 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        What if I don’t want to use video?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#buyingquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        We recommend that you use both video and audio but if you don’t want to use video, you can message your CodePartner at the start of the session.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-title mt-5" id="general">
+                            <h4>General Questions</h4>
+                        </div>
+
+                        <div class="accordion mt-4 pt-2" id="generalquestion">
+                            <div class="accordion-item rounded">
+                                <h2 class="accordion-header" id="headingfive">
+                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive"
+                                        aria-expanded="true" aria-controls="collapsefive">
+                                        How does it feel to work with a stranger?
+                                    </button>
+                                </h2>
+                                <div id="collapsefive" class="accordion-collapse border-0 collapse show" aria-labelledby="headingfive"
+                                    data-bs-parent="#generalquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        CodePartner is a community where people learn from each other. Most users say that once the session gets started, the partner does not feel like a stranger anymore. CodePartner provides a great way for them to meet and learn from different coders from around the world. 
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingsix">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix"
+                                        aria-expanded="false" aria-controls="collapsesix">
+                                        What should I do in the CodePartner Session?
+                                    </button>
+                                </h2>
+                                <div id="collapsesix" class="accordion-collapse border-0 collapse" aria-labelledby="headingsix"
+                                    data-bs-parent="#generalquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        You can choose and set between different goals that you can target during the session:
+                                        <li>Self-Study</li>
+                                        <li>Interview Preparation</li>
+                                        <li>Competitive Programming</li>
+                                        <li>Newbie Coding</li>
+                                        <li>Knowledge Sharing</li>
+                                        <li>Others</li>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingseven">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                                        What are features of the video chat?
+                                    </button>
+                                </h2>
+                                <div id="collapseseven" class="accordion-collapse border-0 collapse" aria-labelledby="headingseven"
+                                    data-bs-parent="#generalquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        The video chat has awesome features like audio, text chat, screen sharing, screen recording and full-screen mode. The video chat is fully integrated and easy-to-use.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingeight">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                                        What is the use of Forum?
+                                    </button>
+                                </h2>
+                                <div id="collapseeight" class="accordion-collapse border-0 collapse" aria-labelledby="headingeight"
+                                    data-bs-parent="#generalquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        The forum is a place for you to interact with the CodePartner community. You can talk about all things tech in the forum. The forum is easy to use and helps you find the topics you might be interested in quickly.
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="section-title mt-5" id="payment">
+                            <h4>Support Questions</h4>
+                        </div>
+
+                        <div class="accordion mt-4 pt-2" id="paymentquestion">
+                            <div class="accordion-item rounded">
+                                <h2 class="accordion-header" id="headingnine">
+                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine"
+                                        aria-expanded="true" aria-controls="collapsenine">
+                                        How can I contact you?
+                                    </button>
+                                </h2>
+                                <div id="collapsenine" class="accordion-collapse border-0 collapse show" aria-labelledby="headingnine"
+                                    data-bs-parent="#paymentquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        You can contact us by emailing us at hello@codepartner.me or you can find our Contact Us form in the Contact Us tab. Alternatively, you can contact our helpdesk from the “Help” floating button once you sign in.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingten">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten"
+                                        aria-expanded="false" aria-controls="collapseten">
+                                        Is there a way to contact the person I am having a session with directly?
+                                    </button>
+                                </h2>
+                                <div id="collapseten" class="accordion-collapse border-0 collapse" aria-labelledby="headingten"
+                                    data-bs-parent="#paymentquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        At this moment we don’t allow direct communication apart from the session itself. But you can interact with other users in the Forum. We want you to connect with multiple users from all across the world!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingeleven">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseeleven" aria-expanded="false" aria-controls="collapseeleven">
+                                        What should I do if my CodePartner shows inappropriate behaviour?
+                                    </button>
+                                </h2>
+                                <div id="collapseeleven" class="accordion-collapse border-0 collapse" aria-labelledby="headingeleven"
+                                    data-bs-parent="#paymentquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        We are here for you. We have strict guidelines against inappropriate behaviour. You can report to us directly by emailing us at  hello@codepartner.me. Ideally, we have a floating “Help” button once you sign in. You can directly report the incident to us for a prompt response.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingtwelve">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsetwelve" aria-expanded="false" aria-controls="collapsetwelve">
+                                        What happens when I receive an order ?
+                                    </button>
+                                </h2>
+                                <div id="collapsetwelve" class="accordion-collapse border-0 collapse" aria-labelledby="headingtwelve"
+                                    data-bs-parent="#paymentquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="section-title mt-5" id="support">
+                            <h4>Other Questions</h4>
+                        </div>
+
+                        <div class="accordion mt-4 pt-2" id="supportquestion">
+                            <div class="accordion-item rounded">
+                                <h2 class="accordion-header" id="headingthirteen">
+                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirteen"
+                                        aria-expanded="true" aria-controls="collapsethirteen">
+                                        Do I need to pay to find a CodePartner?
+                                    </button>
+                                </h2>
+                                <div id="collapsethirteen" class="accordion-collapse border-0 collapse show" aria-labelledby="headingthirteen"
+                                    data-bs-parent="#supportquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        No, it is totally free to use.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingfourteen">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourteen"
+                                        aria-expanded="false" aria-controls="collapsefourteen">
+                                        How long is the session?
+                                    </button>
+                                </h2>
+                                <div id="collapsefourteen" class="accordion-collapse border-0 collapse" aria-labelledby="headingfourteen"
+                                    data-bs-parent="#supportquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        We recommend a session of one hour but if you want to continue the session beyond that then it is totally fine.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingfifteen">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsefifteen" aria-expanded="false" aria-controls="collapsefifteen">
+                                        I want to give an idea for a feature. What should I do?
+                                    </button>
+                                </h2>
+                                <div id="collapsefifteen" class="accordion-collapse border-0 collapse" aria-labelledby="headingfifteen"
+                                    data-bs-parent="#supportquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        Great! We are always looking for your feedback. Please, send us your suggestions at <b>hello@codepartner.me.</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded mt-2">
+                                <h2 class="accordion-header" id="headingsixteen">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsesixteen" aria-expanded="false" aria-controls="collapsesixteen">
+                                        I want to join CodePartner. How can I do that?
+                                    </button>
+                                </h2>
+                                <div id="collapsesixteen" class="accordion-collapse border-0 collapse" aria-labelledby="headingsixteen"
+                                    data-bs-parent="#supportquestion">
+                                    <div class="accordion-body text-muted bg-white">
+                                        First of all, thanks for showing your interest. Just send us your resume at <b>hello@codepartner.me</b> and we will get back to you if we see the right fit.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+         
+        </section><!--end section-->
+        <!-- End Section -->
+
+        <%-include('footer.ejs') %>
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        
+
+        <!-- javascript -->
+        <script src="landingpage/js/bootstrap.bundle.min.js"></script>
+        <script src="landingpage/js/gumshoe.polyfills.min.js"></script>
+        <!-- Icons -->
+        <script src="landingpage/js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="landingpage/js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="landingpage/js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>

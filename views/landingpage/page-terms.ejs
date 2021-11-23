@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Zabble</title>
+        <link rel="shortcut icon" href="/assets/images/logo-mini.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zabble" />
+        <meta name="keywords" content="virtual, productivity, social" />
+       
+      
+        <!-- Bootstrap -->
+        <link href="landingpage/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="landingpage/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Main Css -->
+        <link href="landingpage/css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="landingpage/css/colors/default.css" rel="stylesheet" id="color-opt">
+        <style>
+            @media screen and (max-width: 480px) {
+                 #logo {height:50px}
+
+             }         
+     </style>
+
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+        
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="/">
+                    <img src="images/logo-zabble-dark.png" height="70" class="logo-light-mode" alt="">
+                    <img src="images/logo-zabble-light.png" height="70" class="logo-dark-mode" alt="">
+                </a>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                     <%- include('header.ejs') %>
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h4 class="title"> Terms of Services </h4>
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                        <li class="breadcrumb-item"><a href="/">Zabble</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Terms</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->  
+        
+        <!-- Start Terms & Conditions -->
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="card shadow border-0 rounded">
+                            <div class="card-body">
+                                <h1>Website Terms and Conditions of Use</h1>
+
+                                    <h2>1. Terms</h2>
+
+                                    <p>By accessing this Website, accessible from https://www.zabble.me, you are agreeing to be bound by these Website Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws. If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in this Website are protected by copyright and trade mark law.</p>
+
+                                    <h2>2. Use License</h2>
+
+                                    <p>Permission is granted to temporarily download one copy of the materials on Zabble's Website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+
+                                    <ul>
+                                        <li>modify or copy the materials;</li>
+                                        <li>use the materials for any commercial purpose or for any public display;</li>
+                                        <li>attempt to reverse engineer any software contained on Zabble's Website;</li>
+                                        <li>remove any copyright or other proprietary notations from the materials; or</li>
+                                        <li>transferring the materials to another person or "mirror" the materials on any other server.</li>
+                                    </ul>
+
+                                    <p>This will let Zabble to terminate upon violations of any of these restrictions. Upon termination, your viewing right will also be terminated and you should destroy any downloaded materials in your possession whether it is printed or electronic format. These Terms of Service has been created with the help of the <a href="https://www.termsofservicegenerator.net">Terms Of Service Generator</a>.</p>
+
+                                    <h2>3. Disclaimer</h2>
+
+                                    <p>All the materials on Zabble’s Website are provided "as is". Zabble makes no warranties, may it be expressed or implied, therefore negates all other warranties. Furthermore, Zabble does not make any representations concerning the accuracy or reliability of the use of the materials on its Website or otherwise relating to such materials or any sites linked to this Website.</p>
+
+                                    <h2>4. Limitations</h2>
+
+                                    <p>Zabble or its suppliers will not be hold accountable for any damages that will arise with the use or inability to use the materials on Zabble’s Website, even if Zabble or an authorize representative of this Website has been notified, orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied warranties or limitations of liability for incidental damages, these limitations may not apply to you.</p>
+
+                                    <h2>5. Revisions and Errata</h2>
+
+                                    <p>The materials appearing on Zabble's Website may include technical, typographical, or photographic errors. Zabble will not promise that any of the materials in this Website are accurate, complete, or current. Zabble may change the materials contained on its Website at any time without notice. Zabble does not make any commitment to update the materials.</p>
+
+                                    <h2>6. Links</h2>
+
+                                    <p>Zabble has not reviewed all of the sites linked to its Website and is not responsible for the contents of any such linked site. The presence of any link does not imply endorsement by Zabble of the site. The use of any linked website is at the user’s own risk.</p>
+
+                                    <h2>7. Site Terms of Use Modifications</h2>
+
+                                    <p>Zabble may revise these Terms of Use for its Website at any time without prior notice. By using this Website, you are agreeing to be bound by the current version of these Terms and Conditions of Use.</p>
+
+                                    <h2>8. Your Privacy</h2>
+
+                                    <p>Please read our Privacy Policy.</p>
+
+                                    <h2>9. Governing Law</h2>
+
+                                    <p>Any claim related to Zabble's Website shall be governed by the laws of us without regards to its conflict of law provisions.</p>
+<!-- 
+                                <h5 class="card-title">Users Question & Answer :</h5> -->
+                                
+                                <!-- <div class="accordion mt-4 pt-2" id="buyingquestion">
+                                    <div class="accordion-item rounded">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                How does it work ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse border-0 collapse show" aria-labelledby="headingOne"
+                                            data-bs-parent="#buyingquestion">
+                                            <div class="accordion-body text-muted bg-white">
+                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item rounded mt-2">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Do I need a designer to use Landrick ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                            data-bs-parent="#buyingquestion">
+                                            <div class="accordion-body text-muted bg-white">
+                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="accordion-item rounded mt-2">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                What do I need to do to start selling ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
+                                            data-bs-parent="#buyingquestion">
+                                            <div class="accordion-body text-muted bg-white">
+                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="accordion-item rounded mt-2">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                What happens when I receive an order ?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
+                                            data-bs-parent="#buyingquestion">
+                                            <div class="accordion-body text-muted bg-white">
+                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+<!-- 
+                                <div class="mt-3">
+                                    <a href="javascript:void(0)" class="btn btn-primary mt-2 me-2">Accept</a>
+                                    <a href="javascript:void(0)" class="btn btn-outline-primary mt-2">Decline</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Terms & Conditions -->
+
+        <%-include('footer.ejs') %>
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        
+
+        <!-- javascript -->
+        <script src="landingpage/js/bootstrap.bundle.min.js"></script>
+        <!-- Icons -->
+        <script src="landingpage/js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="landingpage/js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="landingpage/js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>

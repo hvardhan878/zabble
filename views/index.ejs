@@ -38,14 +38,43 @@
         </div>
         <!-- Loader -->
 
-        <!-- Navbar STart -->
         <header id="topnav" class="defaultscroll sticky">
             <div class="container">
                 <!-- Logo container-->
                 <a class="logo" href="/">
-                    <img src="images/logo-zabble-dark.png" height="150" class="logo-light-mode" alt="">
-                    <img src="images/logo-zabble-light.png" height="150" class="logo-dark-mode" alt="">
+                    <img src="../assets/images/logo.png"  id = "logo" height="80" class="logo-light-mode" alt="">
+                    <img src="../assets/images/logo.png"  id = "logo" height="80" class="logo-dark-mode" alt="">
                 </a>
+            </div><!--end container-->
+        </header><!--end header-->
+
+        <!-- Navbar STart -->
+        <header id="topnav" class="bg-light defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="/">
+                    <img src="images/logo-zabble-dark.png" height="70" class="logo-light-mode" alt="">
+                    <img src="images/logo-zabble-light.png" height="70" class="logo-dark-mode" alt="">
+                </a>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                     <%- include('landingpage/header.ejs') %>
+                </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
@@ -454,17 +483,21 @@
                 <!-- </div>end row -->
             <!-- </div>end container -->
         <!-- </footer>end footer -->
-        <footer class="footer footer-bar mt-100">
+        <%- include('landingpage/footer.ejs')%>
+
+        <!-- Back to top -->
+        <!-- Back to top -->
+        <!-- <footer class="footer footer-bar mt-100">
             <div class="container text-center">
                 <div class="row align-items-center">
                     <div class="col-sm-6">
                         <div class="text-sm-start">
                             <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Zabble </p>
                         </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </footer><!--end footer-->
+                    </div>
+                </div>
+            </div>
+        </footer> -->
         <!-- Footer End -->
 
         <!-- Back to top -->
@@ -472,7 +505,6 @@
         <!-- Back to top -->
 
         
-
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <!-- SLIDER -->

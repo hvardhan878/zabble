@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Zabble</title>
+    <link rel="shortcut icon" href="/assets/images/logo-mini.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zabble" />
+    <meta name="keywords" content="virtual, productivity, social" />
+   
+  
+    <!-- Bootstrap -->
+    <link href="landingpage/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="landingpage/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <!-- Main Css -->
+    <link href="landingpage/css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="landingpage/css/colors/default.css" rel="stylesheet" id="color-opt">
+    <style>
+        @media screen and (max-width: 480px) {
+             #logo {height:50px}
+
+         }         
+ </style>
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <!-- <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Loader -->
+    
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="/">
+                <img src="images/logo-zabble-dark.png" height="70" class="logo-light-mode" alt="">
+                <img src="images/logo-zabble-light.png" height="70" class="logo-dark-mode" alt="">
+            </a>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            <div id="navigation">
+                <!-- Navigation Menu-->   
+                 <%- include('header.ejs') %>
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    
+    <!-- Hero Start -->
+    <section class="bg-half bg-light d-table w-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="page-next-level">
+                        <h4 class="title"> Terms of Services </h4>
+                        <div class="page-next">
+                            <nav aria-label="breadcrumb" class="d-inline-block">
+                                <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                    <li class="breadcrumb-item"><a href="/">Zabble</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>  <!--end col-->
+            </div><!--end row-->
+        </div> <!--end container-->
+    </section><!--end section-->
+    <!-- Hero End -->
+    <!-- Hero End -->
+
+    <!-- Shape Start -->
+    <div class="position-relative">
+        <div class="shape overflow-hidden text-white">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+    <!--Shape End-->
+
+    <!-- About Start -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="position-relative">
+                        <img src="images/company/about.jpg" class="rounded img-fluid mx-auto d-block" alt="">
+                        <div class="play-icon">
+                            <a href="http://vimeo.com/287684225" class="play-btn video-play-icon">
+                                <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="section-title ml-lg-4">
+                        <h4 class="title mb-4">Our Story</h4>
+                        <p class="text-muted">We are <span class="text-primary font-weight-bold">Zabble</span>, a startup focused on creating virtual sessions for people to do things together. <br><br>
+
+                            If you are learning guitar, doing meditation, studying or even watching a movie. Get up, turn on your camera (or can even turn off) and do it together with thousands of people from all around the world. Our mission is to keep you on track with your goals, stay productive and help others by keeping each other accountable.</p>
+                        <a href="https://discord.gg/uUcWtaqjyn" class="btn btn-primary mt-3">Join our Discord <i class="mdi mdi-chevron-right"></i></a>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section>
+
+    <%-include('footer.ejs') %>
+
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+    <!-- Back to top -->
+
+    
+
+    <!-- javascript -->
+    <script src="landingpage/js/bootstrap.bundle.min.js"></script>
+    <!-- Icons -->
+    <script src="landingpage/js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="landingpage/js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="landingpage/js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+</html>

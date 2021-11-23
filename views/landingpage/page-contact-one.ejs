@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Zabble</title>
+        <link rel="shortcut icon" href="/assets/images/logo-mini.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zabble" />
+        <meta name="keywords" content="virtual, productivity, social" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="landingpage/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- tobii css -->
+        <link href="landingpage/css/tobii.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="landingpage/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Main Css -->
+        <link href="landingpage/css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="landingpage/css/colors/default.css" rel="stylesheet" id="color-opt">
+        <style>
+            @media screen and (max-width: 480px) {
+                 #logo {height:50px}
+
+             }         
+     </style>
+
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader -->
+
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="/">
+                    <img src="images/logo-zabble-dark.png" height="70" class="logo-light-mode" alt="">
+                    <img src="images/logo-zabble-light.png" height="70" class="logo-dark-mode" alt="">
+                </a>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <%-include('header.ejs') %>
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-half bg-light d-table w-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h4 class="title">Contact Us</h4>
+                            <div class="page-next">
+                                <nav aria-label="breadcrumb" class="d-inline-block">
+                                    <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                        <li class="breadcrumb-item"><a href="/">Zabble</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>  <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+
+        <!-- Start Contact -->
+        <section class="section pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-0 text-center features feature-clean">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-comment d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="content mt-3">
+                                <h5 class="fw-bold">Social Media</h5>
+                                <!-- <a href="tel:+152534-468-854" class="text-primary">+852 5132-6053</a> -->
+                                <ul class="list-unstyled social-icon foot-social-icon">
+                                    <li class="list-inline-item"><a href="https://www.facebook.com/codepartner.me" target="blank" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/code.partner/" target="blank" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                    <li class="list-inline-item"><a href="https://twitter.com/code_partner" target="blank" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                    <!-- <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li> -->
+                                </ul><!--end icon-->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="card border-0 text-center features feature-clean">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-envelope d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="content mt-3">
+                                <h5 class="fw-bold">Email</h5>
+                                <a href="mailto:contact@example.com" class="text-primary">hello@zabble.me</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="card border-0 text-center features feature-clean">
+                            <div class="icons text-primary text-center mx-auto">
+                                <i class="uil uil-map-marker d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="content mt-3">
+                                <h5 class="fw-bold">Location</h5>
+                                <p class="text-muted">530 Lytton Avenue, <br> Palo Alto, CA 94301, USA</p>
+                               
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-80 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1">
+                        <div class="card shadow rounded border-0">
+                            <div class="card-body py-5">
+                                <h4 class="card-title">Get In Touch !</h4>
+                                <div class="custom-form mt-3">
+                                    <form method="post" name="myForm" onsubmit="return validateForm()">
+                                        <p id="error-msg" class="mb-0"></p>
+                                        <div id="simple-msg"></div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Your Name <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="user" class="fea icon-sm icons"></i>
+                                                        <input name="name" id="name" type="text" class="form-control ps-5" placeholder="Name :">
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                        <input name="email" id="email" type="email" class="form-control ps-5" placeholder="Email :">
+                                                    </div>
+                                                </div> 
+                                            </div><!--end col-->
+        
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Subject</label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="book" class="fea icon-sm icons"></i>
+                                                        <input name="subject" id="subject" class="form-control ps-5" placeholder="subject :">
+                                                    </div>
+                                                </div>
+                                            </div><!--end col-->
+        
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label class="form-label">Comments <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <i data-feather="message-circle" class="fea icon-sm icons clearfix"></i>
+                                                        <textarea name="comments" id="comments" rows="4" class="form-control ps-5" placeholder="Message :"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-grid">
+                                                    <button type="submit" id="submit" name="send" class="btn btn-primary">Send Message</button>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                    </form>
+                                </div><!--end custom-form-->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6 order-1 order-md-2">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <img src="landingpage/images/contact.svg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+        
+        </section><!--end section-->
+        <!-- End contact -->
+
+        <%-include('footer.ejs') %>
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        
+
+        <!-- javascript -->
+        <script src="landingpage/js/bootstrap.bundle.min.js"></script>
+        <!-- tobii js -->
+        <script src="landingpage/js/tobii.min.js "></script>
+        <!-- Contact -->
+        <script src="landingpage/js/contact.js"></script>
+        <!-- Icons -->
+        <script src="landingpage/js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="landingpage/js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="landingpage/js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
+</html>
